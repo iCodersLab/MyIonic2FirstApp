@@ -1,0 +1,14 @@
+<ion-navbar *navbar>
+  <ion-title>
+   iCodersLab
+  </ion-title>
+</ion-navbar>
+
+<ion-content class="home" padding>
+  <ion-list>
+    <ion-item *ngFor="let item of listdata" (click)="itemSelected(item)">
+        {{item}}
+    </ion-item>
+  </ion-list>
+
+</ion-content>
